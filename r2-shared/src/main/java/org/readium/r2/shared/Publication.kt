@@ -121,6 +121,9 @@ class Publication : Serializable {
     var listOfVideos: MutableList<Link> = mutableListOf()
     var pageList: MutableList<Link> = mutableListOf()
 
+    var positions:MutableMap<String, Pair<Int, List<Locator>>> = HashMap()
+    var pages:Int=0
+
     var images: MutableList<Link> = mutableListOf()
 
     /// Extension point for links that shouldn't show up in the manifest.
