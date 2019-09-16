@@ -121,8 +121,8 @@ class Publication : Serializable {
     var listOfVideos: MutableList<Link> = mutableListOf()
     var pageList: MutableList<Link> = mutableListOf()
 
-    var positions:MutableMap<String, Pair<Int, List<Locator>>> = HashMap()
-    var pages:Int=0
+    var positions:MutableList<Locator> = mutableListOf()
+    var chapterPosition: MutableMap<String,Int> = mutableMapOf()
 
     var images: MutableList<Link> = mutableListOf()
 
