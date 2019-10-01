@@ -17,14 +17,14 @@ import java.io.Serializable
  *
  * @val href: String -  The href of the resource the locator points at.
  * @val type: String - The media type of the resource that the Locator Object points to.
- * @val title: String - The title of the chapter or section which is more relevant in the context of this locator.
+ * @val index: Int - The index of the chapter or section which is more relevant in the context of this locator.
  * @val location: Location - One or more alternative expressions of the location.
  * @val text: LocatorText? - Textual context of the locator.
  */
 
 open class Locator(val href: String,
                    val type: String,
-                   val title: String? = null,
+                   val index: Int? = null,
                    val locations: Locations? = null,
                    val text: LocatorText?) : Serializable
 
