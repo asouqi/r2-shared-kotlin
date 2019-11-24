@@ -122,8 +122,7 @@ class Publication : Serializable {
     var pageList: MutableList<Link> = mutableListOf()
 
     var positions:MutableList<Locator> = mutableListOf()
-    var chapterPosition: MutableMap<String,Int> = mutableMapOf()
-
+    var resourcePositions: MutableMap<String,MutableList<Locator>> = mutableMapOf()
     var images: MutableList<Link> = mutableListOf()
 
     /// Extension point for links that shouldn't show up in the manifest.
